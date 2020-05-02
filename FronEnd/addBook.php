@@ -41,7 +41,7 @@ include '../PagesController/AddBookCont.php';
 			<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
                             <form class="login100-form validate-form flex-sb flex-w" method="Get" action="">
 					<span class="login100-form-title p-b-32">
-						E-Book Store
+						Pizza Hut
 					</span>
 
 					<span class="txt1 p-b-11">
@@ -73,16 +73,16 @@ include '../PagesController/AddBookCont.php';
 
 
 					<span class="txt1 p-b-11" >
-						ISBN
+						Meal Code
 					</span>
-					<div class="wrap-input100 validate-input m-b-36" data-validate = "ISBN is required">
+					<div class="wrap-input100 validate-input m-b-36" data-validate = "Code is required">
                                             <input type="text" id="textInput" class="input100" name="isbn" >
 						<span class="focus-input100"></span>
                                         </div>
                                           <span class="txt1 p-b-11">
-						Publisher
+						Delivery Time
 					</span>
-					<div class="wrap-input100 validate-input m-b-36" data-validate = "Price is required">
+					<div class="wrap-input100 validate-input m-b-36" data-validate = "Delivery time is required">
                                             <input type="text" id="textInput" class="input100" name="publisher">
 						<span class="focus-input100"></span>
 					 </div>
@@ -102,9 +102,9 @@ include '../PagesController/AddBookCont.php';
 					 </div>
 					 
 					<span class="txt1 p-b-11">
-						Book condition
+						Size
 					</span>
-					<div class="wrap-input100 validate-input m-b-36" data-validate ="Condition is required">
+					<div class="wrap-input100 validate-input m-b-36" data-validate ="Size is required">
                                             <input type="text" id="textInput" class="input100" name="bookCon" >
 						<span class="focus-input100"></span>
 					</div>
@@ -120,7 +120,7 @@ include '../PagesController/AddBookCont.php';
 					
 						<div class="custom-file" style="margin-bottom: 50px;">
 							<label for="myfile" class="txt1 p-b-11">IMAGE:</label>
-							<input type="file"  id="myfile" name="myfile"  >
+							<input type="file"  id="myfile" name="myfile"  >                                                
 						</div>
 	
 					<div class="container-login100-form-btn">

@@ -39,6 +39,7 @@
             $order->setTotal($qua);
             if($orSer->createOrder($order)==1)
             {
+                echo 'Done';
                 $caSer->removeAll($_SESSION['usId']);
             }
             
@@ -86,9 +87,9 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
-                            <form class="login100-form validate-form flex-sb flex-w" method="POST" action="">
+                            <form  class="login100-form validate-form flex-sb flex-w" method="POST" action="">
 					<span class="login100-form-title p-b-32">
-						E-Book Store
+						Pizza Hut
 					</span>
 
 					<span class="txt1 p-b-11" >

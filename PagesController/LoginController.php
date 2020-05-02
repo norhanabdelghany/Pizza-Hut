@@ -15,9 +15,11 @@ $_SESSION['usId']=NULL;
         {
             
             $_SESSION['usName']=$obj->getName();
+            $_SESSION['usPhone']=$obj->getPhone();
+            $_SESSION['usEmail']=$obj->getEmail();
             $_SESSION['usId']=$obj->getID();
             $_SESSION['usType']=$obj->getUserType();
-            header('Location:http://localhost/BookStore/FronEnd/index.php');
+            header('Location:http://localhost/FoodCenter/FronEnd/index.php');
         }  else {
             echo 'Username Or Password Incorrect';
         }

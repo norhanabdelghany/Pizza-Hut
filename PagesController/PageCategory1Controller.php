@@ -41,10 +41,10 @@ class PageCategory1Controller {
             
             echo '<li>
                         <div class="Product">
-                        <a href="Bookinfo.php?cat='.$_GET['cat'].'&catname='.$_GET['catname'].'&book='.$arr[$i]->getId().'" class="img"><img src="img/'.$arr[$i]->getImage().'"/></a>
+                        <a style="width=200px;height=200px;" href="Bookinfo.php?cat='.$_GET['cat'].'&catname='.$_GET['catname'].'&book='.$arr[$i]->getId().'" class="img"><img src="img/'.$arr[$i]->getImage().'"/></a>
                         <a href="Bookinfo.php?cat='.$_GET['cat'].'&catname='.$_GET['catname'].'&book='.$arr[$i]->getId().'" class="name" >'.$name.'</a>
                         <div>   $'.$arr[$i]->getPrice().'</div>
-                           <a href="Bookinfo.php?cat='.$_GET['cat'].'&catname='.$_GET['catname'].'&book='.$arr[$i]->getId().'"class="cart">Show Book</a>
+                           <a href="Bookinfo.php?cat='.$_GET['cat'].'&catname='.$_GET['catname'].'&book='.$arr[$i]->getId().'"class="cart">Details</a>
                         </div>
                      </li>';
         }

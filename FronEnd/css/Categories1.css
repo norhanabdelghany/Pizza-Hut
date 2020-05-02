@@ -1,0 +1,84 @@
+body{
+     background: url(../img/BookSection.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.Supp .Supp a{
+     text-decoration: none;   
+     font-size: 35px;
+      font-weight: bold;
+}
+.addbook a{
+    color:red;
+}
+.addbook a:hover{
+    background-color: blue;
+    color: white;
+}
+.allbooks {
+  margin-bottom: 40px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.allbooks a{
+      font-family: Raleway-Bold;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  padding: 0 20px;
+  height: 55px;
+  background-color: black;
+  border-radius: 27px;
+
+}
+.allbooks a:hover{
+    background-color: blue;
+        color:white;
+}
+.Supp {     
+     padding: 0px;
+     text-align: center;
+     position: relative;
+     width: 100%;
+     min-height: 100%;
+     background-color: rgba(0,0,0,0);
+}
+.Supp h1 {
+     
+     color: rgb(0, 0, 0);
+     text-align: center;
+     font-size: 60px;
+	 text-transform: uppercase;
+	 margin-bottom: 180px;
+}
+
+.zoom {
+    padding: 30px;
+    background-color: transparent;
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.5); 
+}
+.background-wrap {
+    object-fit: cover; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    text-align: center;
+    z-index: -1000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+background {
+    
+    z-index: -1000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

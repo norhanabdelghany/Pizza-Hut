@@ -1,4 +1,5 @@
 <!--start upper bar -->
+<!--start upper bar -->
 	<div class="upper-bar">
 	    <div class="container">
 	        <div class="row">
@@ -15,66 +16,102 @@
 	    </div>
 	</div>
 	<!-- end upper bar -->
-
-<!--start navbar -->
-	<nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container">
-                    <a class="navbar-brand" href="index.php">
-                    <span>Book</span><img src="img/logo.png" style="height: 80px; margin-bottom: 15px;"><span>Store</span>
-                   </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"  style="background-color: white;"    ></span>
-                </button>
+   <header>
+        <div class="main-top-header">
+            <div class="top-header">
+                <div class="logo">
+                    <a href="Home.htm">
+                    <img src="img/logo.png" img title="Home">
+                    </a>
                     
-                    <form class="search" action="../FronEnd/Category1.php" method="GET" style="margin:auto;max-width:400px">
-                          <input type="text" placeholder="Search Name,Price,ISBN" name="search">
-                         <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
-                     
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                      <li class="nav-item active">
-                        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
-                      </li>
-                      
-                      <?php
-                        
-                        if($_SESSION['usType']==0)
-                        {
-                            echo 
-                            '<li class="nav-item">
-                              <a class="nav-link" href="purchase.php" style="color: white;">Purchase</a>
-                            </li>
-                            <li class="nav-item">
-                        <a class="nav-link" href="MyBooks.php" style="color: white;" >MyBooks</a>
-                      </li>';
-                        }  else if($_SESSION['usType']==1) {
-                            echo 
-                            '<li class="nav-item">
-                              <a class="nav-link" href="purchase.php" style="color: white;">TransAction</a>
-                            </li>
-                            <li class="nav-item">
-                        <a class="nav-link" href="Users.php" style="color: white;" >Users</a>
-                      </li>';
-                        }
-                        echo '<li class="nav-item">
-                        <a class="nav-link" href="Supp.php"  style="color: white;">Books</a>
-                      </li>';
-                      if($_SESSION['usType']!=1)
-                       {
-                       echo ' <li class="nav-item">
-                        <a class="nav-link" href="Cart.php" style="color: white;" >CART</a>
-                      </li>
-                       <li class="nav-item">
-                        <a class="nav-link" href="Contact.php" style="color: white;" >Contact</a>
-                      </li>';
-                      }
-                       
-                        	
-                      
-                                ?>
-                    </ul>
-                  </div>
+                    
+                        </div>
+                    <div class="wrap">
+                  
+                         <form class="search" action="../FronEnd/Category1.php" method="GET">
+                             <input type="text" placeholder="Search.." name="search" class="searchTerm">
+                  </form>   
+                  <i style="    box-sizing: border-box;padding: 10px; width: 42.5px; height: 42.5px; position: absolute; top: 0; right: 0; border-radius: 50%; color: crimson; text-align: center; font-size: 1.2em; transition: all 1s" class="fa fa-search"></i>
                 </div>
-            </nav>
+                        <div class="Top">
+                    <ul>
+                        
+                        <li>
+                            <span style="text-transform: uppercase; text-decoration: none; color:crimson; font-size: 600">Welcome :
+             
+                                <i style="color:white" class="fas fa-user"></i> <i style="text-decoration: none; color:white; font-size: 300"><?php  echo $_SESSION['usName'];?></i>
+                             </span>
+                        <a href="Profile.php">
+                            <span class="lnr lnr-user"></span>
+                            </a>
+                            <a  href="Profile.php">Profile</a> 
+                        </li> 
+                        <li>
+                            <a href="Cart.php">
+                            <span class="lnr lnr-cart"></span>
+                            </a>
+                            <a onclick="Displaycart()" href="#">Cart</a> 
+                        </li>
+                        <li >
+                         <span class="lnr lnr-clock"></span>
+                            Opening Hours 10.00 - 02:00
+                        </li>
+                        <li>
+                        <a href="Contactus.html">
+                            <span  class="lnr lnr-phone-handset"></span></a>
+                            Hotline: 19000
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="Top">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    
+                    <li><a href="Supp.php">Menu</a></li>
+                    <li><a href="menu.php">Deals & Offers</a></li>
+                         <?php
+                    if($_SESSION['usType']==1)
+                    {
+                        echo 
+                        '
+                       <li><a href="Users.php">Users</a></li>
+                       <li><a href="Purchase.php">Tranasction</a></li>
+                        ';
+                        
+                    }
+                
+                ?>
+                    <?php
+                     if($_SESSION['usType']!=1)
+                    {
+                        echo 
+                        '
+                        <li><a href="COVID-19%20measures.html">COVID-19</a></li>
+                        <li><a href="Purchase.php">Purchase</a></li>
+                        ';
+                        
+                    }
+                
+                ?>
+                   
+                 <li> 
+                      <div class="dropdown">
+                          <a>Service</a>
+                                <div class="dropdown-content">                                    
+                                    <a href="Location.php"> Location</a>
+                                    <a href="FAQ.php">FAQ</a>
+                                    <a href="AboutUS.php">About us</a> 
+                                   <a href="Contactus.php">Contact us</a>
+                                    
+                                </div>
+                            </div> 
+                        </li>
+                </ul>
+            </div>
+        </nav>
+        </header>
                 <!--end navbar -->
